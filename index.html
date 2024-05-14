@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search Website</title>
+    <!-- font awesome icons cdn -->
+    <script
+      src="https://kit.fontawesome.com/0cdbef4a6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- header -->
+      <div class="header">
+        <img src="./logo.png" alt="site logo" />
+
+        <h1 style="color: rgb(12, 12, 12)">
+          IMDB<span style="color: rgb(0, 255, 162)">Clone</span>
+        </h1>
+      </div>
+      <!-- end of header -->
+
+      <!-- search area -->
+
+      <div class="search-container">
+        <div class="search-heading">
+          <h1>Search Movies</h1>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
+
+          <div class="search-list" id="search-list"></div>
+        </div>
+      </div>
+      <!-- end of search area -->
+      <!-- showing result -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid"></div>
+        </div>
+      </div>
+      <!-- end of showing result  -->
+    </div>
+
+    <!-- movie app js -->
+    <script src="./imdb.js"></script>
+  </body>
+</html>
